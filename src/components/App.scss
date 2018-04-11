@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic');
+@import '../styles/variables';
+
+body {
+	font-family: 'Roboto';
+	margin: 0;
+
+	p {
+		margin: 0;
+		font-family: 'Roboto';
+	}
+
+	a:hover {
+		cursor: pointer;
+	}
+
+	img {
+		margin: 0;
+		padding: 0;
+		border: none;
+		display: block;
+	}
+}
+
+.btn, .btn:focus {
+	padding: 0;
+	background: none;
+	border: none;
+
+	outline: none !important;
+}
+.btn:hover {
+	cursor: pointer;
+}
+
+.btn-std-big, .btn-std-small, .btn-std-small:focus , .btn-std-big:focus {
+	height: 60 * $scaler;
+	padding: 0 20 * $scaler;
+	font-size: 18 * $scaler;
+	color: #ffffff;
+	text-align: center;
+	background-color: #464646;
+	white-space: pre;
+}
+.btn-std-big:hover, .btn-std-small:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.btn-std-small, .btn-std-small:focus {
+	height: 40 * $scaler;
+	font-size: 16 * $scaler;
+	padding: 0 20 * $scaler;
+}
+
+//transition group
+
+.ModalTransition {
+	// position: fixed;
+	z-index: 999;
+}
+
+.modal-enter {
+	opacity: 0.01;
+}
+
+.modal-enter.modal-enter-active {
+	opacity: 1;
+	transition: opacity 300ms ease-in;
+}
+
+.modal-exit {
+	opacity: 1;
+}
+
+.modal-exit.modal-exit-active {
+	opacity: 0.01;
+	transition: opacity 300ms ease-out;
+}
+
+
+
+.modal-600-enter {
+	opacity: 0.01;
+}
+
+.modal-600-enter.modal-600-enter-active {
+	opacity: 1;
+	transition: opacity 600ms ease-in;
+}
+
+.modal-600-exit {
+	opacity: 1;
+}
+
+.modal-600-exit.modal-600-exit-active {
+	opacity: 0.01;
+	transition: opacity 600ms ease-out;
+}
+
+//Flex templates-------------------------------------------------------------------------
+
+.flex-center, .flex-end, .flex-start, .flex-between, .flex-around  {
+	display: flex;
+}
+
+.flex-center  {
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-between {
+	justify-content: space-between;
+}
+
+.flex-end {
+	justify-content: flex-end;
+}
+
+.flex-start {
+	justify-content: flex-start;
+}
+
+.flex-around {
+	justify-content: space-around;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.flex-column-r {
+	flex-direction: column-reverse;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+
+.flex-align-stretch {
+	align-items: stretch;
+}
+
+.flex-align-start {
+	align-items: flex-start;
+}
+
+.flex-align-end {
+	align-items: flex-end;
+}
+
+.flex-align-center {
+	align-items: center;
+}
+
+.flex-align-baseline {
+	align-items: baseline;
+}
+
+.flex-wrap {
+	flex-wrap: wrap;
+}
+
+.flex-self-center {
+	align-self: center;
+}
+
+.flex-self-end {
+	align-self: flex-end;
+}
+
+.flex-self-start {
+	align-self: flex-start;
+}
